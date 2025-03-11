@@ -1,0 +1,119 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 검색 결과 컨테이너 */
+.container {
+    margin-top: 50px;
+}
+
+/* 인스타그램 피드 스타일 */
+.feed-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 개별 뉴스 카드 */
+.feed-item {
+    background: #636363;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.feed-item:hover {
+    transform: scale(1.05);
+}
+
+/* 뉴스 제목 */
+.feed-item a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.feed-item a:hover {
+    text-decoration: underline;
+}
+
+/* 뉴스 날짜 */
+.date {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin-top: 10px;
+}
+
+/* 뒤로가기 버튼 */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #0077cc;
+}
+
+/* 검색 박스 스타일 */
+.container {
+    margin-top: 150px;
+    border: 5px;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 400px;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0077cc;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 결과</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>"{{ query }}" 검색 결과</h1>
+        <div class="feed-container">
+            {% for news in news_list %}
+                <div class="feed-item">
+                    <a href="{{ news.link }}" target="_blank">{{ news.title | safe }}</a>
+                    <p class="date">🕒 {{ news.formatted_date }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="/" class="back-button">메인 화면으로 돌아가기</a>
+    </div>
+</body>
+</html>

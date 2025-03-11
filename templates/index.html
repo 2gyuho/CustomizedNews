@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스 검색</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        async function fetchNews() {
+            const query = document.getElementById("searchQuery").value;
+            if (!query) return;
+            window.location.href = `/results?query=${query}`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">NEWS</h1>
+        <div class="search-box">
+            <input type="text" id="searchQuery" placeholder="검색어 입력">
+            <button onclick="fetchNews()">🔍 검색</button>
+        </div>
+    </div>
+</body>
+</html>
